@@ -20,10 +20,29 @@
 </nav>
 
 <div id="fullpage">
-    <!-- Ihre Abschnitte hier -->
+    <div class="section" id="section0">
+        <img src="logo.png" alt="Ihr Logo" id="logo">
+        <p>Ihr einzigartiger Satz über das Unternehmen.</p>
+    </div>
+    <div class="section" id="section1">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <p>Ihr Text über das Video.</p>
+    </div>
+    <div class="section" id="section2">
+        <h1>Übersicht über die Förderungen</h1>
+        <p>Details zu den Förderungen...</p>
+    </div>
+    <div class="section" id="section3">
+        <h1>Kontakt</h1>
+        <form id="kontaktformular">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">E-Mail:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+            <input type="submit" value="Absenden">
+        </form>
+    </div>
 </div>
-
-<button id="backToTop" onclick="backToTop()">Nach oben</button>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
 <script src="script.js"></script>
