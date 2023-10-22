@@ -1,8 +1,9 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 #menu {
@@ -10,7 +11,7 @@ body {
     top: 0;
     width: 100%;
     background-color: #f0f0f0;
-    padding: 10px 0;
+    padding: 10px 30%;
     z-index: 1000;
     border-bottom: 1px solid #ccc;
 }
@@ -39,16 +40,23 @@ body {
 
 .section {
     color: #2c3e50;
-    padding: 40px;
-    text-align: center;
-    margin: 0 auto;
-    width: 70%;
+    padding: 40px 30%;
+    text-align: left;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.section.in-view {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 h1 {
     font-size: 3em;
     margin-bottom: 20px;
     text-align: left;
+    font-weight: 700;
 }
 
 p {
@@ -67,8 +75,20 @@ p {
 
 #logos img {
     max-width: 150px;
-    margin: 0 10px;
+    margin: 10px;
 }
+
+@media only screen and (max-width: 768px) {
+    #menu,
+    .section {
+        padding: 10px;
+    }
+
+    .content-container {
+        width: 100%;
+    }
+}
+
 
 #backToTop {
     position: fixed;
