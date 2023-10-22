@@ -62,8 +62,7 @@ p {
 #logo {
     display: block;
     margin: auto;
-    max-width: 50%;  /* Stellt sicher, dass das Logo innerhalb des Containers skaliert */
-}
+    max-width: 50%;  
 
 #logos {
     display: flex;
