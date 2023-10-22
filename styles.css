@@ -9,10 +9,10 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #f0f0f0; /* Hintergrundfarbe der Menüleiste auf die gleiche Farbe wie den Hintergrund der Seite setzen */
+    background-color: #f0f0f0;
     padding: 10px 0;
     z-index: 1000;
-    border-bottom: 1px solid #ccc; /* Linie hinzufügen */
+    border-bottom: 1px solid #ccc;
 }
 
 #menu ul {
@@ -28,36 +28,25 @@ body {
 }
 
 #menu a {
-    color: #2c3e50; /* Farbe der Menülinks */
+    color: #2c3e50;
     text-decoration: none;
-    padding: 0; /* Polsterung entfernen */
+    padding: 0;
 }
 
 #menu a:hover {
-    text-decoration: underline; /* Unterstreichung beim Überfahren hinzufügen */
-}
-
-#menu a, #backToTop {
-    color: white;
-    text-decoration: none;
-    background-color: #3498db;
-    padding: 10px 20px;
-    border-radius: 4px;
-}
-
-#menu a:hover, #backToTop:hover {
-    background-color: #2980b9;
+    text-decoration: underline;
 }
 
 .section {
     color: #2c3e50;
     padding: 40px 20px;
-    text-align: center;
+    text-align: left; /* Überschriften linksbündig */
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 3em; /* Größere Überschriften */
     margin-bottom: 20px;
+    margin-left: 20px; /* Abstand hinzugefügt */
 }
 
 p {
@@ -67,8 +56,15 @@ p {
     margin-bottom: 20px;
 }
 
+#logos {
+    display: flex;
+    justify-content: space-around; /* Logos über eine größere Viewportbreite verteilen */
+    flex-wrap: wrap; /* Erlaubt das Umbruch der Logos auf kleineren Bildschirmen */
+    margin: 20px;
+}
+
 #logos img {
-    max-width: 100px;
+    max-width: 150px; /* Größere Logos */
     margin: 0 10px;
 }
 
@@ -76,33 +72,14 @@ p {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #3498db;
-    color: white;
-    padding: 10px;
+    width: 40px;
+    height: 40px;
     border: none;
     cursor: pointer;
-    border-radius: 4px;
-}
-
-#backToTop:hover {
-    background-color: #2980b9;
-}
-
-input[type=text], input[type=email], input[type=submit] {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0 20px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-}
-
-input[type=submit] {
-    background-color: #2c3e50;
-    color: white;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: #3498db;
+    border-radius: 50%;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%232c3e50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
 }
