@@ -4,38 +4,22 @@ new fullpage('#fullpage', {
     scrollHorizontally: true,
     anchors: ['Willkommen', 'Förderungen', 'Aktuelles', 'Kontakt'],
     menu: '#menu',
-});
+    // Optionen für das Ein- und Ausblenden von Abschnitten
+    onLeave: function(origin, destination, direction){
+        var leavingSection = this;
 
-// Funktion zum Überprüfen, ob ein Element im Viewport sichtbar ist
-function isElementInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-}
-
-// Funktion zum Hinzufügen der Klasse 'in-view' zu Sektionen im Viewport
-function handleScroll() {
-    const sections = document.querySelectorAll('.section');
-    sections.forEach(section => {
-        if (isElementInViewport(section)) {
-            section.classList.add('in-view');
-        } else {
-            section.classList.remove('in-view');
+        // Nach dem Verlassen des Abschnitts 2
+        if(origin.index == 1 && direction =='down'){
+            alert("Going to section 3!");
         }
-    });
-}
 
-// Event-Listener für Scroll-Ereignisse
-window.addEventListener('scroll', handleScroll);
-
-// Initialer Aufruf der handleScroll-Funktion
-handleScroll();
+        else if(origin.index == 1 && direction == 'up'){
+            alert("Going to section 1!");
+        }
+    }
+});
 
 // Funktion zum Scrollen nach oben
 function backToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    fullpage_api.moveTo(1);  // Scrollt zu Abschnitt 1
 }
