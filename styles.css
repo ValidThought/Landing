@@ -40,13 +40,14 @@ body {
 .section {
     color: #2c3e50;
     padding: 40px 20px;
-    text-align: left; /* Überschriften linksbündig */
+    text-align: center; /* Inhalte zentrieren */
 }
 
 h1 {
-    font-size: 3em; /* Größere Überschriften */
+    font-size: 3em;
     margin-bottom: 20px;
-    margin-left: 20px; /* Abstand hinzugefügt */
+    padding-left: 30%; /* Abstand vom linken Rand */
+    text-align: left; /* Überschriften linksbündig */
 }
 
 p {
@@ -58,13 +59,13 @@ p {
 
 #logos {
     display: flex;
-    justify-content: space-around; /* Logos über eine größere Viewportbreite verteilen */
-    flex-wrap: wrap; /* Erlaubt das Umbruch der Logos auf kleineren Bildschirmen */
+    justify-content: space-around;
+    flex-wrap: wrap;
     margin: 20px;
 }
 
 #logos img {
-    max-width: 150px; /* Größere Logos */
+    max-width: 150px;
     margin: 0 10px;
 }
 
