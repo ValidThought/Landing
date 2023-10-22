@@ -9,9 +9,10 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #2c3e50;
+    background-color: #f0f0f0; /* Hintergrundfarbe der Menüleiste auf die gleiche Farbe wie den Hintergrund der Seite setzen */
     padding: 10px 0;
     z-index: 1000;
+    border-bottom: 1px solid #ccc; /* Linie hinzufügen */
 }
 
 #menu ul {
@@ -24,6 +25,16 @@ body {
 #menu li {
     display: inline;
     margin: 0 15px;
+}
+
+#menu a {
+    color: #2c3e50; /* Farbe der Menülinks */
+    text-decoration: none;
+    padding: 0; /* Polsterung entfernen */
+}
+
+#menu a:hover {
+    text-decoration: underline; /* Unterstreichung beim Überfahren hinzufügen */
 }
 
 #menu a, #backToTop {
