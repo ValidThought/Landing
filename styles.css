@@ -39,15 +39,16 @@ body {
 
 .section {
     color: #2c3e50;
-    padding: 40px 20px;
-    text-align: center; /* Inhalte zentrieren */
+    padding: 40px;
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
 }
 
 h1 {
     font-size: 3em;
     margin-bottom: 20px;
-    padding-left: 30%; /* Abstand vom linken Rand */
-    text-align: left; /* Überschriften linksbündig */
+    text-align: left;
 }
 
 p {
@@ -83,4 +84,36 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 20px;
+}
+
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .material-icons {
+    font-size: 24px;
+}
+
+#copyright {
+    margin-left: 10px;
+}
+
+#footer-links {
+    margin-right: 10px;
 }
