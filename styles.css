@@ -62,7 +62,7 @@ p {
 #logo {
     display: block;
     margin: auto;
-    max-width: 50%;  
+    max-width: 200px;  
 
 #logos {
     display: flex;
