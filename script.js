@@ -1,15 +1,12 @@
+// Initialisierung von fullPage.js
 new fullpage('#fullpage', {
     autoScrolling: true,
-    navigation: true,
-    anchors: ['Willkommen', 'Video', 'Foerderungen', 'Kontakt', 'Aktuelles'],
+    scrollHorizontally: true,
+    anchors: ['Willkommen', 'Förderungen', 'Aktuelles', 'Kontakt'],
     menu: '#menu',
-    scrollingSpeed: 1000
 });
 
-function backToTop() {
-    fullpage_api.moveTo(1);  // Scrollt zur ersten Section
-}
-
+// Funktion zum Überprüfen, ob ein Element im Viewport sichtbar ist
 function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
     return (
@@ -37,3 +34,8 @@ window.addEventListener('scroll', handleScroll);
 
 // Initialer Aufruf der handleScroll-Funktion
 handleScroll();
+
+// Funktion zum Scrollen nach oben
+function backToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
