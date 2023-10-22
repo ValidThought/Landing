@@ -14,13 +14,14 @@ body {
     padding: 10px 30%;
     z-index: 1000;
     border-bottom: 1px solid #ccc;
+    text-align: left;
 }
 
 #menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    text-align: center;
+    display: inline-block;
 }
 
 #menu li {
@@ -57,6 +58,11 @@ p {
     max-width: 800px;
     margin: auto;
     margin-bottom: 20px;
+}
+#logo {
+    display: block;
+    margin: auto;
+    max-width: 100%;  /* Stellt sicher, dass das Logo innerhalb des Containers skaliert */
 }
 
 #logos {
@@ -117,4 +123,10 @@ footer .material-icons {
 
 #footer-links {
     margin-right: 10px;
+}
+
+.content-container {
+    width: 70%;
+    margin: auto;
+    padding: 40px 0;  /* Änderung des Padding, um die Ausrichtung der Überschriften anzupassen */
 }
