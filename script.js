@@ -1,7 +1,7 @@
 new fullpage('#fullpage', {
     autoScrolling: true,
     navigation: true,
-    anchors: ['Willkommen', 'Video', 'Foerderungen', 'Kontakt'],
+    anchors: ['Willkommen', 'Video', 'Foerderungen', 'Kontakt', 'Aktuelles'],
     menu: '#menu',
     scrollingSpeed: 1000
 });
