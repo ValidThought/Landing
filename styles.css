@@ -62,7 +62,7 @@ p {
 #logo {
     display: block;
     margin: auto;
-    max-width: 80%;  /* Stellt sicher, dass das Logo innerhalb des Containers skaliert */
+    max-width: 100%;  /* Stellt sicher, dass das Logo innerhalb des Containers skaliert */
 }
 
 #logos {
@@ -73,7 +73,7 @@ p {
 }
 
 #logos img {
-    max-width: 150px;
+    max-width: 450px;
     margin: 0 10px;
 }
 
